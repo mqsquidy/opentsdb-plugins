@@ -81,8 +81,8 @@ public class TSDataUtils {
         if (tags.size() <= 0) {
             logger.warn("Need at least one tag (metric=" + metric + ", tags=" + tags + ')');
             return false;
-        } else if (tags.size() > Const.MAX_NUM_TAGS) {
-            logger.warn("Too many tags: " + tags.size() + " maximum allowed: " + Const.MAX_NUM_TAGS + ", tags: " + tags);
+        } else if (tags.size() > Const.MAX_NUM_TAGS()) {
+            logger.warn("Too many tags: " + tags.size() + " maximum allowed: " + Const.MAX_NUM_TAGS() + ", tags: " + tags);
             return false;
         }
 
